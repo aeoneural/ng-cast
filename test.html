@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <title>Hello World, AngularJS - ViralPatel.net</title>
+  <script type="text/javascript"
+    src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  <script src="node_modules/angular/angular.js"></script>
+  <script type = 'text/javascript'> 
+  
+    // var ContactController = function ($scope) { 
+    //   $scope.contacts = ['hi@email.com', 'hello@email.com'];
+    //   $scope.add = function() { 
+    //     $scope.contacts.push($scope.newcontact);
+    //     $scope.newcontact = '';
+    //   };
+
+    // };
+    
+  </script>
+  
+</head>
+<body>
+  
+  Write some text in textbox:
+  <input type="text" ng-model="sometext" />
+  
+  <h1 ng-show = "sometext">Hello {{ sometext }}</h1>
+
+  <h4>Uppercase: {{sometext | uppercase}}</h4>
+
+  <h4>Lowercase: {{sometext | lowercase}}</h4>
+
+
+  <input type="date" ng-model="somedate" />
+
+  <h1 ng-show = "somedate">Hello {{ somedate }}</h1>
+  <h1>Formatted Date:  {{somedate | date: "MM/dd/yyyy 'at' h:mma" }}</h1>
+  
+
+  <!-- Controllers -->
+  <!-- <div ng-controller="ContactController">
+    Email: <input type = 'text' ng-model = 'newcontact' />
+    <button ng-click='add()'> Add </button>
+    <h2>Contacts</h2>
+  
+    <ul>
+      <li ng-repeat = 'contact in contacts'> {{ contacts }} </li>
+    </ul>
+
+  </div> -->
+
+
+</body>
+</html>
