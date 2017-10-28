@@ -1,7 +1,3 @@
 <ul class="video-list">
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-</ul>
+  <video-list-entry onClick = '$ctrl.onClick' video='video' ng-repeat='video in $ctrl.videos track by $index' >Hello</video-list-entry>
+</ul>;
