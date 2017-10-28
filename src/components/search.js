@@ -2,8 +2,10 @@ angular.module('video-player')
 
 .component('search', {
   bindings: { 
-    onButton: '<', 
-    onInput: '<',
+    search: '<', 
   }, 
+  controller: function() { 
+    
+  },
   templateUrl: 'src/templates/search.html' 
 });

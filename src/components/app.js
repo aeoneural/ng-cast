@@ -15,7 +15,7 @@ angular.module('video-player')
     };
 
     this.callback = (input) => { 
-      console.log('callback hello', input);
+      console.log('callback object', input.data.item);
       this.videos = input.data.items;
       this.currentVideo = input.data.items[0];
     };
